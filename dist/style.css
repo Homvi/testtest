@@ -1,0 +1,58 @@
+body {
+  background-color: #efd592;
+  width: 100vw;
+  user-select: none;
+}
+
+.burger-container {
+  background-color: #242d38;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #efd592;
+  color: #efd592;
+  font-size: 26px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.grid-container {
+  background-color: #efd592;
+  height: 90vh;
+  display: grid;
+  margin: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "cube head" "cube paragraph" "cube anchor";
+}
+.grid-container .cube-container {
+  grid-area: cube;
+  background-color: #242d38;
+}
+.grid-container h2 {
+  grid-area: head;
+  margin: 30px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+.grid-container p {
+  grid-area: paragraph;
+  margin: 30px;
+  align-items: center;
+}
+.grid-container a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  grid-area: anchor;
+  margin: 30px;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

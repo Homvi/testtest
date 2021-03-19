@@ -1,0 +1,16 @@
+1. #copy to the terminal for live coplile scss to css (sass needs to be installed)
+
+sass --watch ./src/style.scss ./dist/style.css
+
+2. copy into ./src/stlye.scss for test 
+
+body {
+  background-color: aqua;
+}
+
+3.Copy to ./src/main.js for test
+
+let backgroundChanger = (color) => {
+document.body.style.background = color
+}
+backgroundChanger("red");
